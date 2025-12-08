@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html{
+    user-select: none;
+} */
+
+/* input{
+    outline: none;
+    border: none;
+} */
+
+.content-width{
+    width: calc(100vw - 250px);
+}
+
+
+.content-height{
+    height: calc(100vh - 100px);
+}
+
+.custom-loader {
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:conic-gradient(#0000 10%,#766DF4);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation:s3 1s infinite linear;
+}
+@keyframes s3 {to{transform: rotate(1turn)}}
+
+
+
+/* thin vertical cursor using ::after so we control thickness precisely */
+.myType {
+  position: relative; /* needed for ::after positioning */
+}
+
+/* the cursor itself */
+.myType::after {
+  content: "";
+  position: absolute;
+  right: 0;                /* place at end of inline text — adjust if needed */
+  top: 0.08em;             /* small vertical offset so it aligns nicer */
+  width: 3px;              /* control thickness here (1px = thin) */
+  height: 0.95em;          /* control height */
+  background: currentColor;/* uses text color */
+  opacity: 0.8;
+  animation: myCursorBlink 1s steps(1, end) infinite;
+}
+
+/* blinking */
+@keyframes myCursorBlink {
+  0%, 50% { opacity: 0.8; }
+  51%, 100% { opacity: 0; }
+}
+
+
+
+@media(max-width: 1125px){
+    .sidebar{
+        transform: translateX(-100%);
+        z-index: 399;
+    }
+
+    .dash-content{
+        margin-left: 0;
+    }   
+
+    .dash-nav{
+        width: 100%;
+    }
+
+    .show-sidebar{
+        transform: translateX(0%);
+        z-index: 399;
+    }
+
+    .hamburgur{
+        display: block;
+    }
+
+    .content-height{
+        height: 100vh;
+    }
+
+    .content-width{
+        width: 100vw;
+    }
+}
+
+@media(max-width:550px){
+    .dash-name{
+        display: none;
+    }
+}
+
+
+@media(max-width:550px){
+    .dash-data{
+        display: block;
+    }
+
+    .dash-data-items{
+        margin-top: 20px;
+    }
+
+    .dash-alumni-directory{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:700px){
+    .job-post{
+        border-top : 8px solid #003B73;
+        border-left: none;
+    }
+
+    .job-post-item,.notice-post-item{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-left: 20px;
+    }
+
+    .event-post{
+        border-top : 8px solid #ffc72c;
+        border-left: none;
+    }
+
+    .notice-post-item2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px
+    }
+
+    .profile-image{
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media(max-width: 950px){
+    .event-post-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .event-post-image{
+        width: 100%;
+        height: 370px;
+    }
+}
+
+
+.ticket-list-2{
+    display: none;
+}
+
+@media(max-width: 750px){
+    .ticket-container{
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+
+    .ticket-list-1{
+        display: none;
+    }
+
+    .ticket-list-2{
+        display: block;
+    }
+}
+
+
+@media(max-width: 500px){
+    .support-ticket{
+        font-size: 20px;
+    }
+
+    .new-ticket{
+        font-size: 13px;
+    }
+
+    .profile-name{
+        font-size: 28px;
+    }
+
+    .profile-role{
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width: 1100px){
+    .profile-width{
+        width: 90%;
+    }
+    
+}
+
+
+@media(max-width: 1350px){
+    .alumni-profile-width{
+        width: 92%;
+    }
+}
+
+@media(max-width: 750px){
+    .alumni-profile-width{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 550px;
+    }
+}
+
+
+@media(max-width: 850px){
+    .popup-1{
+        width: 90%;
+    }
+}
+
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  height: 60px;
+  aspect-ratio: 1;
+  position: relative;
+  border: 3px solid #0000;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  inset: auto 35% 0;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #CF4647;
+  animation: l6-0 .5s cubic-bezier(0,800,1,800) infinite;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  outline: 3px solid #524656;
+  animation: l6-1 .5s linear infinite;
+}
+@keyframes l6-0 {
+  0%,2% {bottom: 0%}
+  98%,to {bottom:.1%}
+}
+@keyframes l6-1 {
+  0%,30% {rotate:  0deg}
+  70%,to {rotate: 90deg}
+}
