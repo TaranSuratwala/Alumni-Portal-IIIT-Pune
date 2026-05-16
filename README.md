@@ -1,3 +1,13 @@
+<p align="center">
+	<img src="https://capsule-render.vercel.app/api?type=rect&color=0:14532d,100:c59b2a&height=120&section=header&text=Alumni%20Portal%20-%20IIIT%20Pune&fontSize=30&fontColor=F8FAFC&fontAlignY=60" alt="Alumni Portal banner" />
+</p>
+
+<p align="center">
+	<img src="https://img.shields.io/github/last-commit/TaranSuratwala/Alumni-Portal-IIIT-Pune?style=flat-square" alt="Last commit" />
+	<img src="https://img.shields.io/github/languages/top/TaranSuratwala/Alumni-Portal-IIIT-Pune?style=flat-square" alt="Top language" />
+	<img src="https://img.shields.io/github/repo-size/TaranSuratwala/Alumni-Portal-IIIT-Pune?style=flat-square" alt="Repo size" />
+</p>
+
 # Alumni Portal - IIIT Pune
 
 Role-based alumni portal for students, alumni, and administrators. The platform supports onboarding, alumni directories, job posts, events, notices, and support tickets.
@@ -15,6 +25,10 @@ Role-based alumni portal for students, alumni, and administrators. The platform 
 - Frontend: React, Tailwind CSS
 - Backend: Node.js, Express, MongoDB
 - Integrations: Cloudinary, Nodemailer
+
+## Site Theme
+
+A GitHub Pages ready theme lives in `docs/`. Enable Pages to serve from the `/docs` folder.
 
 ## Quick Start
 

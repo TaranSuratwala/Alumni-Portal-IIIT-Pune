@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Alumni Portal - IIIT Pune</title>
+  <link rel='preconnect' href='https://fonts.googleapis.com' />
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+  <link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap' rel='stylesheet' />
+  <link rel='stylesheet' href='styles.css' />
+</head>
+<body>
+  <div class='bg'>
+    <span class='leaf leaf-one'></span>
+    <span class='leaf leaf-two'></span>
+    <span class='mesh'></span>
+  </div>
+
+  <header class='topbar'>
+    <div class='logo'>Alumni Portal</div>
+    <nav class='nav'>
+      <a href='#roles'>Roles</a>
+      <a href='#features'>Features</a>
+      <a href='#quickstart'>Quickstart</a>
+      <a href='#integrations'>Integrations</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class='hero'>
+      <div class='hero-copy'>
+        <p class='eyebrow'>IIIT Pune community</p>
+        <h1>A home for alumni, students, and mentors.</h1>
+        <p class='lead'>
+          A role-based portal for alumni networking, job postings, events, and support tickets.
+          Built with modern web tooling and secure authentication.
+        </p>
+        <div class='cta-row'>
+          <a class='btn primary' href='#quickstart'>Run locally</a>
+          <a class='btn ghost' href='https://github.com/TaranSuratwala/Alumni-Portal-IIIT-Pune'>View repo</a>
+        </div>
+        <div class='stat-row'>
+          <div class='stat'>
+            <span class='stat-value'>3</span>
+            <span class='stat-label'>user roles</span>
+          </div>
+          <div class='stat'>
+            <span class='stat-value'>OTP</span>
+            <span class='stat-label'>secure onboarding</span>
+          </div>
+          <div class='stat'>
+            <span class='stat-value'>Cloud</span>
+            <span class='stat-label'>media uploads</span>
+          </div>
+        </div>
+      </div>
+      <div class='hero-panel'>
+        <div class='panel-card'>
+          <p class='panel-label'>Frontend</p>
+          <p class='panel-value'>React + Tailwind</p>
+          <p class='panel-note'>Role-specific dashboards and pages.</p>
+        </div>
+        <div class='panel-card highlight'>
+          <p class='panel-label'>Backend</p>
+          <p class='panel-value'>Express + MongoDB</p>
+          <p class='panel-note'>JWT sessions and OTP verification.</p>
+        </div>
+        <div class='panel-card'>
+          <p class='panel-label'>Engagement</p>
+          <p class='panel-value'>Jobs, events, tickets</p>
+          <p class='panel-note'>Keep the community active.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id='roles' class='section'>
+      <div class='section-head'>
+        <h2>Role experiences</h2>
+        <p>Tailored workflows for every user group.</p>
+      </div>
+      <div class='card-grid'>
+        <article class='card'>
+          <h3>Students</h3>
+          <p>Find alumni mentors, explore events, and track tickets.</p>
+        </article>
+        <article class='card'>
+          <h3>Alumni</h3>
+          <p>Share opportunities, update profiles, and connect with peers.</p>
+        </article>
+        <article class='card'>
+          <h3>Admins</h3>
+          <p>Moderate posts, manage events, and oversee communication.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id='features' class='section'>
+      <div class='section-head'>
+        <h2>Platform features</h2>
+        <p>Engagement tools built into a cohesive UI.</p>
+      </div>
+      <div class='card-grid'>
+        <article class='card'>
+          <h3>OTP authentication</h3>
+          <p>Secure signups with time-based verification.</p>
+        </article>
+        <article class='card'>
+          <h3>Events and notices</h3>
+          <p>Broadcast updates to the community instantly.</p>
+        </article>
+        <article class='card'>
+          <h3>Job posts</h3>
+          <p>Create and manage alumni-driven opportunities.</p>
+        </article>
+        <article class='card'>
+          <h3>Ticketing</h3>
+          <p>Support workflows for student and alumni requests.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id='quickstart' class='section split'>
+      <div>
+        <h2>Quickstart</h2>
+        <p>Install server dependencies, configure env, then launch the React UI.</p>
+      </div>
+      <div class='code-stack'>
+        <div class='code-card'>
+          <div class='code-title'>Backend</div>
+          <pre><code>cd server
+npm install
+npm run dev</code></pre>
+        </div>
+        <div class='code-card'>
+          <div class='code-title'>Frontend</div>
+          <pre><code>npm install
+npm start</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id='integrations' class='section'>
+      <div class='section-head'>
+        <h2>Integrations</h2>
+        <p>External services that power the experience.</p>
+      </div>
+      <div class='link-grid'>
+        <div class='link-card'>Cloudinary media uploads</div>
+        <div class='link-card'>Nodemailer SMTP notifications</div>
+        <div class='link-card'>MongoDB persistence</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class='footer'>
+    <p>Designed to strengthen alumni relationships and campus collaboration.</p>
+  </footer>
+</body>
+</html>
