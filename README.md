@@ -1,24 +1,24 @@
-<p align="center">
-	<img src="https://capsule-render.vercel.app/api?type=rect&color=0:14532d,100:c59b2a&height=120&section=header&text=Alumni%20Portal%20-%20IIIT%20Pune&fontSize=30&fontColor=F8FAFC&fontAlignY=60" alt="Alumni Portal banner" />
-</p>
-
-<p align="center">
-	<img src="https://img.shields.io/github/last-commit/TaranSuratwala/Alumni-Portal-IIIT-Pune?style=flat-square" alt="Last commit" />
-	<img src="https://img.shields.io/github/languages/top/TaranSuratwala/Alumni-Portal-IIIT-Pune?style=flat-square" alt="Top language" />
-	<img src="https://img.shields.io/github/repo-size/TaranSuratwala/Alumni-Portal-IIIT-Pune?style=flat-square" alt="Repo size" />
-</p>
-
 # Alumni Portal - IIIT Pune
 
-Role-based alumni portal for students, alumni, and administrators. The platform supports onboarding, alumni directories, job posts, events, notices, and support tickets.
+A role-based alumni management platform for students, alumni, and administrators at IIIT Pune.
 
-## Highlights
+## Live Deployment
 
-- OTP-based signup and JWT login
+- Frontend: https://iiitptestalumniportal.netlify.app/auth
+- Backend API: https://alumni-portal-deploy-backend.vercel.app/
+
+## Overview
+
+The portal streamlines alumni engagement through onboarding, profile management, job opportunities, event announcements, notices, and support ticket workflows.
+
+## Key Features
+
+- OTP-based signup and JWT authentication
 - Role-based dashboards for Student, Alumni, and Admin
-- Job posts, events, notices, and ticket workflows
 - Alumni directory and profile management
-- Cloudinary image uploads and email notifications
+- Job postings, events, and notices
+- Ticket-based support workflow
+- Cloudinary media uploads and email notifications
 
 ## Tech Stack
 
@@ -26,20 +26,16 @@ Role-based alumni portal for students, alumni, and administrators. The platform 
 - Backend: Node.js, Express, MongoDB
 - Integrations: Cloudinary, Nodemailer
 
-## Site Theme
+## Getting Started
 
-A GitHub Pages ready theme lives in `docs/`. Enable Pages to serve from the `/docs` folder.
-
-## Quick Start
-
-### Backend
+### 1) Backend Setup
 
 ```bash
 cd server
 npm install
 ```
 
-Create `server/.env` with these keys:
+Create `server/.env` with the following values:
 
 ```dotenv
 PORT=4000
@@ -53,28 +49,29 @@ MAIL_USER=your-email@example.com
 MAIL_PASS=your-email-password
 ```
 
-Start the API server:
+Run the backend server:
 
 ```bash
 npm run dev
 ```
 
-### Frontend
+### 2) Frontend Setup
 
 ```bash
 npm install
 npm start
 ```
 
-The frontend expects the API at `http://localhost:4000/api/v1` (see `src/App.js`).
+The frontend is configured to consume the API at `http://localhost:4000/api/v1` (see `src/App.js`).
 
 ## Project Structure
 
-```
-server/  Express API, MongoDB models, auth, uploads
-src/     React app, pages, components
+```text
+server/  Express API, MongoDB models, authentication, uploads
+src/     React application, pages, and reusable components
+docs/    GitHub Pages-ready theme assets
 ```
 
 ## License
 
-ISC License
+This project is licensed under the ISC License.
